@@ -1,0 +1,28 @@
+{
+  "name": "test-unitaire-karma-jasmine",
+  "version": "0.0.1",
+  "description": "Test unitaire karma et jasmine || L'un est un moteur et l'autre un framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djaafarcode/test-unitaire-karma-jasmine.git"
+  },
+  "author": "D.BOUMAZA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djaafarcode/test-unitaire-karma-jasmine/issues"
+  },
+  "homepage": "https://github.com/djaafarcode/test-unitaire-karma-jasmine#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.0"
+  },
+  "dependencies": {
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.0.1"
+  }
+}
