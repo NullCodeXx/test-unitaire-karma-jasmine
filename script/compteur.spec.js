@@ -30,12 +30,6 @@ describe('class compteur', () => {
         expect(compteur.compte).toBe(-1);
     })
 
-    // it('should reset compte to 0', () => {
-    //   let compteur = new Compteur();
-    // compteur.compte = 5;
-    // compteur.reset();
-    //expect(compteur.compte).toBe(0);
-    //});
     it('should reset counter on reset', () => {
         compteur.incrementer();
         expect(compteur.compte).toBe(1);

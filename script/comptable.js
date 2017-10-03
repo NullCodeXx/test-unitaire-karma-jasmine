@@ -1,10 +1,10 @@
 class Comptable {
     constructor(calculette) {
-        this.calculette = new Calculette();
+        this.calculette = new Calculate();
     }
 
 
-    getBenefice(recette, salaire, tva) {
+    getBenefices(recette, salaire, tva) {
         let recetteTaxees = this.calculette.calcule(recette, tva, '*'); //renvoie 4
         if (recetteTaxees > salaire) {
             return this.calculette.calcule(recette, salaire, '-'); //renvoie 4

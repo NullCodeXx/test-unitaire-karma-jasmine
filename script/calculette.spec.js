@@ -11,7 +11,7 @@ describe('Test class caculette', () => {
 
     //Test opérateur -
     it('Renvoie un opérateur de soustration', () => {
-        expect(calcule.calcule(2, 2, '-')).toBe(-4);
+        expect(calcule.calcule(2, 2, '-')).toBe(-0);
     })
 
     //Test opérateur *
@@ -21,7 +21,7 @@ describe('Test class caculette', () => {
 
     //Test opérateur /
     it('Renvoie un opérateur de division', () => {
-        expect(calcule.calcule(2, 2, '/')).toBe(2);
+        expect(calcule.calcule(2, 2, '/')).toBe(1);
     })
 
     //Test opérateur %

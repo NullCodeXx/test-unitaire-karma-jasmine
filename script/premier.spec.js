@@ -16,7 +16,7 @@ it('should add 2 to 2', () => {
 
 //Permet de regrouper des choses ensemble.
 describe('function  additionner', () => {
-    expect(additionner(-2, -2)).toBe(-4);
+    //expect(additionner(-2, -2)).toBe(-4);
 
     //Faire un test avec des nombres négatifs.
     it('should contenate string params', () => {
@@ -24,10 +24,9 @@ describe('function  additionner', () => {
     })
 
     //Faire un test avec des chaine de charactere.
-    it('should add with negative numbers', () => {
-        let result = additionner(2, 2);
-        expect(additionner('bloup', 2)).toBe('bloup', 2);
-    });
+    // it('should add with negative numbers', () => {
+    //     expect(additionner('bloup', 2)).toBe('bloup2');
+    // });
 
     it('should thrown error with string params', () => {
         /*Le bind crée une function avec des parametre exemple.
@@ -35,6 +34,6 @@ describe('function  additionner', () => {
         mafonction();
         */
         expect(additionner.bind(null, 'bloup', 2))
-            .toThrow
+            .toThrowError()
     })
 });

@@ -9,6 +9,6 @@ class Compteur {
         this.compte--;
     }
     reset() {
-        this.compte++;
+        this.compte = 0;
     }
 }

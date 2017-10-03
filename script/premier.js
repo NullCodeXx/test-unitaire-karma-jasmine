@@ -2,7 +2,7 @@
 
 function additionner(a, b) {
     //Ajouter une condition de typage. 
-    if (typeof(a) !== Number || typeof(b) !== Number) {
+    if (typeof(a) !== 'number' || typeof(b) !== 'number') {
         //throw déclenche une erreur.
         throw new Error('expect numbers as parameters');
     }
