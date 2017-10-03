@@ -5,9 +5,9 @@ class Comptable {
 
 
     getBenefice(recette, salaire, tva) {
-        let recetteTaxees = this.calculette(recette, tva, '*');
+        let recetteTaxees = this.calculette.calcule(recette, tva, '*'); //renvoie 4
         if (recetteTaxees > salaire) {
-            return this.calculette(recette, salaire, '-');
+            return this.calculette.calcule(recette, salaire, '-'); //renvoie 4
         }
         return "en faillite";
     }

@@ -12,5 +12,16 @@ describe('test Comptable', () => {
                 return 4;
             }
         }
+        comptable.calculette = mockCalculette;
+    })
+
+    //test si sa renvoie en faillite.
+    it("Dois retourner en faillite.", () => {
+        expect(comptable.getBenefices(100, 5, 100)).toBe('en faillite');
+    })
+
+    //Test si return 4.
+    it("Dois retourner 4", () => {
+        expect(comptable.getBenefices(100, 3, 100)).toBe(4);
     })
 })
