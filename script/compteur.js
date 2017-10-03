@@ -1,5 +1,5 @@
 class Compteur {
-    construstor() {
+    constructor() {
         this.compte = 0;
     }
     incrementer() {
